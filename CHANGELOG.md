@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.0
+  - Updated to light-baseimage:v1.3.4 (debian bookworm)
+  - Added php8.2-fpm 
+  - **BREAKING CHANGE**: removed php7.0-fpm
+
 ## 1.1.1
   - Add default ssl, security, cache and gzip config
 
@@ -10,23 +15,23 @@
   - Upgrade baseimage: light-baseimage:1.1.1 (debian stretch)
   - set php timeout to 90s
 
-## 1.0.0
+## 1.0.0
   - order apt sources
   - time for 1.0.0 whup whup !
 
-## 0.1.12
+## 0.1.12
   - Use light-baseimage:0.2.6
 
-## 0.1.11
+## 0.1.11
   - Use light-baseimage:0.2.5
 
-## 0.1.10
+## 0.1.10
   - Use light-baseimage:0.2.4
 
-## 0.1.9
+## 0.1.9
   - Use light-baseimage:0.2.2
 
-## 0.1.8
+## 0.1.8
   - Use light-baseimage:0.2.1
 
 ## 0.1.7
