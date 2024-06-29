@@ -1,6 +1,7 @@
 FROM aeris1one/light-baseimage:v1.3.4
 
-RUN sed -i 's| main| main contrib non-free|g' /etc/apt/sources.list \
+# add non-free repository to /etc/apt/sources.list.d/non-free.list
+RUN echo "deb http://deb.debian.org/debian buster non-free" > /etc/apt/sources.list.d/non-free.list \
     && curl https://nginx.org/keys/nginx_signing.key | gpg --dearmor \
     | sudo tee /usr/share/keyrings/nginx-archive-keyring.gpg >/dev/null \
     && echo "deb [signed-by=/usr/share/keyrings/nginx-archive-keyring.gpg] \
